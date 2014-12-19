@@ -21,6 +21,8 @@ object HopfieldForm: THopfieldForm
     Height = 50
     Fill.ColorMirror = clNone
     Fill.ColorMirrorTo = clNone
+    Fill.GradientType = gtVertical
+    Fill.GradientMirrorType = gtSolid
     Fill.BorderColor = clNone
     Fill.Rounding = 0
     Fill.ShadowOffset = 0
@@ -39,7 +41,7 @@ object HopfieldForm: THopfieldForm
     CaptionShadow.Font.Height = -27
     CaptionShadow.Font.Name = 'Tahoma'
     CaptionShadow.Font.Style = []
-    Version = '1.5.0.1'
+    Version = '1.6.0.2'
   end
   object sheet: TAdvStringGrid
     Left = 34
@@ -61,6 +63,7 @@ object HopfieldForm: THopfieldForm
     ParentFont = False
     ScrollBars = ssBoth
     TabOrder = 0
+    HoverRowCells = [hcNormal, hcSelected]
     OnClickCell = sheetClickCell
     ActiveCellFont.Charset = DEFAULT_CHARSET
     ActiveCellFont.Color = clWindowText
@@ -93,6 +96,14 @@ object HopfieldForm: THopfieldForm
     FilterDropDown.Font.Name = 'Tahoma'
     FilterDropDown.Font.Style = []
     FilterDropDownClear = '(All)'
+    FilterEdit.TypeNames.Strings = (
+      'Starts with'
+      'Ends with'
+      'Contains'
+      'Not contains'
+      'Equal'
+      'Not equal'
+      'Clear')
     FixedRowHeight = 22
     FixedFont.Charset = DEFAULT_CHARSET
     FixedFont.Color = clWindowText
@@ -100,6 +111,8 @@ object HopfieldForm: THopfieldForm
     FixedFont.Name = 'Tahoma'
     FixedFont.Style = [fsBold]
     FloatFormat = '%.2f'
+    HoverButtons.Buttons = <>
+    HoverButtons.Position = hbLeftFromColumnLeft
     PrintSettings.DateFormat = 'dd/mm/yyyy'
     PrintSettings.Font.Charset = DEFAULT_CHARSET
     PrintSettings.Font.Color = clWindowText
@@ -137,7 +150,8 @@ object HopfieldForm: THopfieldForm
     SearchFooter.MatchCaseCaption = 'Match case'
     SelectionColor = clWhite
     ShowSelection = False
-    Version = '6.0.0.0'
+    SortSettings.DefaultFormat = ssAutomatic
+    Version = '7.4.4.2'
   end
   object Shader: TShader
     Left = 0
@@ -149,7 +163,7 @@ object HopfieldForm: THopfieldForm
     FromColor = 16777088
     ToColor = clWhite
     Direction = False
-    Version = '1.4.0.0'
+    Version = '1.4.1.0'
     DesignSize = (
       519
       41)
@@ -163,7 +177,7 @@ object HopfieldForm: THopfieldForm
       OnClick = TrainBtnClick
     end
     object matchBtn: TButton
-      Left = 128
+      Left = 123
       Top = 8
       Width = 75
       Height = 25

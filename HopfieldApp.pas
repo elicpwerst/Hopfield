@@ -64,7 +64,7 @@ end;
 
 procedure THopfieldForm.FormCreate(Sender: TObject);
 begin
-  caption := 'Hopefield Network';
+  caption := 'Hopfield Network';
   TrainBtn.Caption := 'Train';
   MatchBtn.Caption := 'Match pattern';
   ClearBtn.Caption := 'Clear matrix';

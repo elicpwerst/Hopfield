@@ -493,6 +493,7 @@ class operator Matrix1DRec.Multiply(b: double;a: Matrix1DRec) : Matrix1DRec;
 begin
   result := a*b;
 end;
+
 class operator Matrix1DRec.Add(a: Matrix1DRec; b: Matrix1DRec) : Matrix1DRec;
 var
   r   : integer;
@@ -504,6 +505,7 @@ begin
 
   result := res;
 end;
+
 class operator Matrix1DRec.Add(a: Matrix1DRec; b: double) : Matrix1DRec;
 var
   r   : integer;
