@@ -1,0 +1,13 @@
+*.dcu
+*.bak
+*.exe
+*.cbk
+*.cfg
+*.drc
+*.dsk
+*.dsm
+*.identcache
+*.local
+*.map
+*.jdbg
+*.~*

@@ -67,7 +67,7 @@ begin
   caption := 'Hopfield Network';
   TrainBtn.Caption := 'Train';
   MatchBtn.Caption := 'Match pattern';
-  ClearBtn.Caption := 'Clear matrix';
+  ClearBtn.Caption := 'Clear Table';
   EraseBtn.Caption := 'Erase matrix';
   TitleLbl.Caption.Text := caption;
   setLength(grid,sheet.RowCount, sheet.ColCount);

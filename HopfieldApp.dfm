@@ -3,7 +3,7 @@ object HopfieldForm: THopfieldForm
   Top = 0
   Caption = 'Hopfield application'
   ClientHeight = 348
-  ClientWidth = 519
+  ClientWidth = 547
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -156,7 +156,7 @@ object HopfieldForm: THopfieldForm
   object Shader: TShader
     Left = 0
     Top = 307
-    Width = 519
+    Width = 547
     Height = 41
     Align = alBottom
     TabOrder = 1
@@ -164,11 +164,12 @@ object HopfieldForm: THopfieldForm
     ToColor = clWhite
     Direction = False
     Version = '1.4.1.0'
+    ExplicitWidth = 519
     DesignSize = (
-      519
+      547
       41)
     object TrainBtn: TButton
-      Left = 24
+      Left = 34
       Top = 8
       Width = 75
       Height = 25
@@ -177,31 +178,37 @@ object HopfieldForm: THopfieldForm
       OnClick = TrainBtnClick
     end
     object matchBtn: TButton
-      Left = 123
+      Left = 117
       Top = 8
-      Width = 75
+      Width = 80
       Height = 25
       Caption = 'matchBtn'
       TabOrder = 1
       OnClick = matchBtnClick
     end
     object ClearBtn: TButton
-      Left = 328
+      Left = 302
       Top = 8
       Width = 75
       Height = 25
+      Hint = 'Clears the table above'
       Anchors = [akTop, akRight]
       Caption = 'ClearBtn'
+      ParentShowHint = False
+      ShowHint = True
       TabOrder = 2
       OnClick = ClearBtnClick
     end
     object EraseBtn: TButton
-      Left = 425
+      Left = 383
       Top = 8
-      Width = 75
+      Width = 103
       Height = 25
+      Hint = 'zeros out the weighted matrix'
       Anchors = [akTop, akRight]
       Caption = 'EraseBtn'
+      ParentShowHint = False
+      ShowHint = True
       TabOrder = 3
       OnClick = EraseBtnClick
     end
